@@ -1,0 +1,111 @@
+
+#1
+# l={"python","c++","html"}
+# print(l)
+# {'c++', 'html', 'python'}
+
+
+#2
+# a=input("enter the space seperated string:").split()
+# b=set(a)
+# print(b)
+# enter the space seperated string:apple banana mango
+# {'mango', 'banana', 'apple'}
+
+
+#3
+# c={'red', 'blue', 'green'}
+# c.add('sky')
+# print(c)
+# {'sky', 'red', 'blue', 'green'}
+
+
+#4
+# a= {'apple', 'banana'}
+# b={'banana', 'cherry'}
+# a.update(b)
+# print(a)
+# {'apple', 'cherry', 'banana'}
+
+
+#5
+# a={"hyd","chennai"}
+# b={"tn","hrf3yf"}
+# c=a|b
+# print(c)
+# {'tn', 'hrf3yf', 'chennai', 'hyd'}
+
+
+#6
+# a={'alex', 'john', 'mike'}
+# b={'john', 'mike', 'lisa'}
+# c=a&b
+# print(c)
+# {'mike', 'john'}
+
+
+#7
+# a={'pen', 'pencil', 'eraser'}
+# a.discard('pencil')
+# print(a)
+# {'pen', 'eraser'}
+
+
+#8
+# a={'pen', 'pencil', 'eraser'}
+# a.remove("marker")
+# print(a)
+# #error
+
+
+#9
+# weekdays={"mon","tue","wed","thu","fri"}
+# a=weekdays.pop()
+# print(weekdays)
+# print(a)
+# {'thu', 'wed', 'tue', 'mon'}
+# fri
+
+
+#10
+# s={"toyota","hyundia","tata"}
+# s.clear()
+# print(s)
+# set()
+
+
+#11
+# t={"a","b"}
+# del t
+# print(t)
+# #error
+
+
+#12
+# a="hello"
+# b=set(a)
+# print(b)
+# {'e', 'o', 'h', 'l'}
+
+
+#13
+# a=input("enter:").split()
+# b=set(a)
+# print(b)
+# enter:apple baanna mango apple
+# {'mango', 'apple', 'baanna'}
+
+
+#14
+# A = {'a', 'b', 'c'} 
+# B = {'c', 'd', 'e'}
+# c=A-B
+# print(c)
+# {'a', 'b'}
+
+
+#15
+# s={"item1","item2","item3"}
+# s.add("item4")
+# print(len(s))
+# 4

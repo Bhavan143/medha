@@ -1,0 +1,49 @@
+
+#13-6-25
+#1. IF
+# if True:
+#     print(a)
+
+
+#2. IF ELSE
+# if True:
+#     print("good")
+# else:
+#     print("bad")
+
+
+#3.IF_ELIF_ELSE
+# a,b=1,3
+# if a>b:
+#     print("One")
+# elif a==b:
+#     print("two")
+# else:
+#     print("done")
+
+
+#4.IF-ELIF
+# a,b=1,3
+# if a<b:
+#     print("one")
+# elif b>a:
+#     print("two")
+
+
+#1. Check if it is valid combo
+#2.For every if,else,elif block,identation must be at same level
+#3.At any point,only block will be executed in a given combo
+
+#16/06/25
+#FUNCTIONS
+
+
+#17/06/25
+
+#19/06/25
+
+#23/06/25
+#assigned grps
+
+#24/06/25
+#OOPS

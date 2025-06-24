@@ -1,0 +1,139 @@
+
+#1
+# fruits = [['jack', 'apple'], ['orange', 'kiwi'], ['dragon', 'grape']]
+# print(fruits[2][0])
+#output----#dragon
+
+#2
+# a=((0, 1), (2, 3), (4, 5))
+# print(a[-1][1])
+#output-----#5
+
+#3
+# s=[('Alice', 23), ('Bob', 21)]
+# print(s[1][1])
+#output----#21
+
+#4
+# a=([10, 20], [30, 40])
+# print(a[1][1])
+# output---#40
+
+#5
+# a=[
+#     {"name":"bhavan",
+#     "age":19},
+#     {
+#     "name":"adarsh",
+#     "age":19
+
+#     }
+# ]
+# print(a[0]["name"])
+#output----#bhavan
+
+#6
+# subject_marks={
+#     "math":[95,99,100],
+#     "phy":[77,89,90]    
+# }
+# print(subject_marks["math"][1])
+# #99
+
+#7
+# profile={
+#     "a":{
+#         "name":"bhavan",
+#         "age":19
+#     },
+#     "b":{
+#         "address":"hyd"
+#     }
+# }
+# print(profile)
+# {'a': {'name': 'bhavan', 'age': 19}, 'b': {'address': 'hyd'}}
+
+#8
+# a=[
+#     {"trnsaction":1,
+#      "status":"pending"
+#     },
+#     {
+#       "trnsaction":2,
+#      "status":"success"  
+#     }
+# ]
+# print(a[1]["status"])
+# success
+
+#9
+# a=({"transaction":1,
+#    "amount":1000,
+#    },
+#   {
+#     "transaction":2,
+#     "amount":2000
+#   })
+# print(a[0]["amount"])
+# 1000
+
+#10
+# a=[("hyd",37.5),("guntur",40.5),("chennai",44.7)]
+# print(a[2][-1])
+# 44.7
+
+#11
+# a={
+#     "user1":[90,99,100],
+#     "user2":[100,100,99]
+# }
+# print(a["user1"][-1])
+# 100
+
+#12
+# a=[{
+#     "product":"mobile",
+#     "price":20000
+# },
+#    {
+#        "product":"tv",
+#        "price":40000
+#    }]
+# print(a[1]["product"])
+# tv
+
+#13
+# a=[("math",[99,100,98]),("phy",[90,80,85])]
+# print(a[0][-1][1:2])
+# [100]
+
+#14
+# a={
+#     "mon":["brush","bath"],
+#     "tue":["dance","sleep"],
+#     "wed":["eat","dance"],
+#     "thu":["run","gym"],
+#     "fri":["jog","run","sleep"],
+#     "sat":["eat","sleep"],
+#     "sun":["run","sleep","njoy"]
+# }
+# print(a["mon"][0])
+#brush
+
+#15
+# a={
+#     "bhavan":{
+#         "math":99,
+#         "phy":99,
+#         "che":99,
+#         "eng":95
+#     },
+#     "adarsh":{
+#         "math":100,
+#         "phy":99,
+#         "che":99,
+#         "eng":99
+#     }
+# }
+# print(a["bhavan"]["math"])
+# #99

@@ -1,0 +1,175 @@
+
+#1
+# a={"biryani":300,"grill_chicken":380}
+# print(a)
+# {'biryani': 300, 'grill_chicken': 380}
+
+
+#2
+# subject=input("enter the subject:").split()
+# marks=input("enter the marks:").split()
+# marks=[int(m) for m in marks]
+# score = {subject[0]: marks[0], subject[1]: marks[1], subject[2]: marks[2]}
+# print(score)
+# enter the subject:math phy eng
+# enter the marks:99 90 99
+# {'math': 99, 'phy': 90, 'eng': 99}
+
+
+#3
+# a={"name":"bahvan",
+#   "age":19,
+#   "grade":"A",
+#   }
+# a.update({"city":"hyd"})
+# print(a)
+# {'name': 'bahvan', 'age': 19, 'grade': 'A', 'city': 'hyd'}
+
+
+#4
+# a= {"a": 1, "b": 2}
+# a.update( {"b": 3, "c": 4})
+# print(a)
+# {'a': 1, 'b': 3, 'c': 4}
+
+
+#5
+# personA={"skills":"dancing"}
+# personB={"skills2":"writing"}
+# merge={**personA,**personB}
+# print(merge)
+# {'skills': 'dancing', 'skills2': 'writing'}
+
+
+#6
+# a={"apple": 5, "banana": 3, "orange": 8}
+# b=a.keys()
+# print(b)
+# dict_keys(['apple', 'banana', 'orange'])
+
+
+#7
+# a= {"red": "FF0000", "green": "00FF00", "blue": "0000FF"}
+# b=a.values()
+# print(b)
+# dict_values(['FF0000', '00FF00', '0000FF'])
+
+
+#8
+# a={"pen":1,"pencil":2,"eraser":3}
+# a.pop("pencil")
+# print(a)
+# {'pen': 1, 'eraser': 3}
+
+
+#9
+# a={"pen":1,"pencil":2,"eraser":3}
+# b=a.get("marker")
+# print(b)
+# #error
+
+
+#10
+# a={"nexon":2025,"camry":2022,"city":2020}
+# b=a.popitem()
+# print(a)
+# print(b)
+# {'nexon': 2025, 'camry': 2022}
+# ('city', 2020)
+
+
+#11
+# a={"booktitle":1,"booktitle2":2}
+# a.clear()
+# print(a)
+#{}
+
+
+#12
+# a={"booktitle":1,"booktitle2":2}
+# del a
+# print(a)
+#error
+
+
+#13
+# a=["name","age","city"]
+# b=["bhavan",19,"hyd"]
+# result=dict(zip(a,b))
+# print(result)
+# {'name': 'bhavan', 'age': 19, 'city': 'hyd'}
+
+
+#14
+# --1.words = input("Enter 5 words separated by spaces: ").split()
+# a = {}
+# for word in words:
+#     a[word]=a.get(word,0)+1
+# print("Word frequency dictionary:", a)
+# Enter 5 words separated by spaces: bahvan bhavan nagam nagam nagam
+# Word frequency dictionary: {'bahvan': 1, 'bhavan': 1, 'nagam': 3}
+#----2. from collections import Counter
+# a=input("enter 5 space seperated words:").split()
+# b=dict(Counter(a))
+# print(b)
+# enter 5 space seperated words:bahvan bhavan bhavan
+# {'bahvan': 1, 'bhavan': 2}
+
+
+#15
+# a= {"x": 10, "y": 20, "z": 30}
+# for key,values in a.items():
+#     if(values>15):
+#         print(values)
+# 20
+# 30
+
+
+#16
+# a={"bheemlanayak":2023,"harihara vera mallu":2025,}
+# b=len(a)
+# print(b)
+# 2
+
+
+#17
+# a= {"java": 1995, "python": 1991, "c++": 1985}
+# b="python" in a
+# print(b)
+# True
+
+
+#18
+# a={"personal info":
+#    {"name":"bhavan",
+#    "age":19,
+#    "address":"miyapur"
+#    },
+#   "grade":{
+#       "math":"A",
+#       "scince":"B",
+#       "english":"B"
+#       }
+#   }
+# print("grade:",a["grade"]["math"])
+# grade: A
+
+
+#19
+#----1. a={"h":104,"e":101,"l":108,"l":108,"o":111}
+# print(a)
+# {'h': 104, 'e': 101, 'l': 108, 'o': 111}
+#----2. a= {"x": 10, "y": 20, "z": 30}
+# b={char:ord(char) for char in a}
+# print(b)
+# {'x': 120, 'y': 121, 'z': 122}
+
+
+#20
+# person={"name":"bhavan","age":19}
+# person2=person.copy()
+# person["age"]=35
+# print(person)
+# print(person2)
+# {'name': 'bhavan', 'age': 35}
+# {'name': 'bhavan', 'age': 19}

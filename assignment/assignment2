@@ -1,0 +1,105 @@
+
+#1
+# fruits=["apple","banana","mango","pineapple","orange"]
+# print(fruits[0])
+# print(fruits[-1])
+# apple
+# orange
+
+
+#2
+# city=input("enter the cities:")
+# a=list(city)
+# print(a)
+# enter the cities:hyd chennai texas
+# ['h', 'y', 'd', ' ', 'c', 'h', 'e', 'n', 'n', 'a', 'i', ' ', 't', 'e', 'x', 'a', 's']
+
+
+#3
+# list=[1200,850,950,720]
+# print(list[0::2])
+# [1200, 950]
+
+
+#4
+# list=[2,4,6,8,10]
+# list.append(12)
+# print(list)
+# [2, 4, 6, 8, 10, 12]
+
+
+#5
+# list=["java","C++","Go"]
+# list.insert(1,"python")
+# print(list)
+# ['java', 'python', 'C++', 'Go']
+
+
+#6
+# s=input("enter the sentence:")
+# print(s.split())
+# enter the sentence: my name is ashish sharma
+# ['my', 'name', 'is', 'ashish', 'sharma']
+
+#7
+# list=["jan","feb","march","apr"]
+# del list[3]
+# print(list)
+# ['jan', 'feb', 'march']
+
+
+#8
+# list= ['car', 'bus', 'train']
+# list.sort()
+# list.reverse()
+# print(list)
+# ['train', 'car', 'bus']
+
+
+#9
+# list =['apple', 'banana', 'apple', 'cherry']
+# a=list.count('apple')
+# print(a)
+# #2
+
+
+#10
+# a="Tom has {0}apples and {1}bananas".format(3,5)
+# print(a)
+# Tom has 3apples and 5bananas
+
+
+#11
+# word=list("hello")
+# print(word)
+# ['h', 'e', 'l', 'l', 'o']
+
+
+#12
+# list=[1,2,3]
+# print(sum(list))
+# print(sum(list)/3)
+# 6
+# 2.0
+
+
+#13
+# a=input("enter your name:")
+# b=list(a)
+# b.reverse()
+# print(b)
+# enter your name:bhaavan
+# ['n', 'a', 'v', 'a', 'a', 'h', 'b']
+
+
+#14
+# list= ['Alice', 'Bob', 'Charlie']
+# print("Bob" in list)
+# #True
+
+
+#15
+# list= ['one', 'two', 'three'] 
+# list.clear()
+# print(list)
+# []

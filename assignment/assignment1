@@ -1,0 +1,118 @@
+
+#1
+# fullname=input("enter your name:")
+# b=fullname.index(" ")
+# print(fullname[0:b])
+# enter your name:bhavan nagam
+# bhavan
+
+
+#2
+# n=input("Enter your city name:")
+# print(n.upper())
+# print(n.lower())
+# print(n.title())
+# print(n.capitalize())
+# Enter your city name:HYdd
+# HYDD
+# hydd
+# Hydd
+# Hydd
+
+
+#3
+# n=("Technology")
+# print(n[::-1])
+# ygolonhceT
+
+
+#4
+# print("data","science",sep="-")
+# data-science
+
+
+#5
+# price=float(input("Enter the price:"))
+# print(f"currency is {price:.2f}")
+# Enter the price:200
+# currency is 200.00
+
+
+#6
+# name=input("Enter your name:")
+# age=int(input("enter your age:"))
+# print(f"my name is {name} and age is {age}")
+# Enter your name:bhavan
+# enter your age:19
+# my name is bhavan and age is 19
+
+
+#7
+# a="python"
+# b="python is beautiful"
+# print(a in b)
+# #True
+
+
+#8
+# str="my name "
+# a=str.strip()
+# print(len(a))
+# --output#7
+
+
+#9
+# pp=200
+# tp=pp+(5/100*pp)
+# print(tp)
+# 210.0
+
+
+#10
+# name="Alice"
+# print("i" in name)
+# print("z" not in name)
+# True
+# True
+
+
+#11
+# user1=int(input("enter ur marks:"))
+# user2=int(input("enter ur marks:"))
+# user3=int(input("enter ur marks:"))
+# avg=(user1+user2+user3)/3
+# print(avg)
+# enter ur marks:6
+# enter ur marks:6
+# enter ur marks:6
+# 6.0
+
+
+#12
+# w=int(input("enter your weight in kg:"))
+# h=float(input("enter your height in metres:"))
+# bmi=(w/h**2)
+# print(bmi)
+# enter your weight in kg:83
+# enter your height in metres:1.85
+# 24.251278305332356
+
+
+#13
+# str="I love Python"
+# print(str[2:6])
+# #love
+
+
+#14
+# str="this is a bad idea"
+# b=str.replace("bad","good")
+# print(b)
+# this is a good idea
+
+
+#15
+# a=1000
+# b=1000
+# print(a is b)
+# True
