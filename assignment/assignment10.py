@@ -125,3 +125,87 @@
 # print(b.tenth_class())   
 # print(b.floor)
 
+#4.
+      
+# class Products():
+#     def __init__(self,name,type_,price):
+#         self.name=name
+#         self.type_=type_
+#         self.price=price
+#     def details(self):
+#         print(f"the name of the product is {self.name}")
+#         print(f"the brand of the product is {self.type_}")
+#         print(f"the price of the product is {self.price}")
+#     def exp(self):
+#         if self.price>100000:
+#             print("it is expensive")
+#         else:
+#             print("affordable")
+# a=Products("phone","samsung",120000)
+# print(a.price)
+# print(a.exp())
+# print(a.details())
+
+# class cart():
+#     def __init__(self,cart_product):
+#         self.cart_product=cart_product
+#     def products_in_cart():
+
+    
+
+
+
+
+
+#5.
+
+# class book():
+#     def __init__(self,author,title):
+#         self.author=author
+#         self.title=title
+#         self.issued=False
+#     def issue(self):
+#         print("the book has been issued to the student")
+#         self.issued=True
+#     def read(self):
+#         print("student read the book")
+#     def returned(self):
+#         if self.issued:
+#             print("student has returned book")
+#         else:
+#             print("book has not been issued")
+
+# a=book("ramanujan","wings of fire")
+# print(a.title)
+# print(a.issue())
+# print(a.read())
+# print(a.returned())
+
+# class librarian():
+#     def __init__(self,name,id):
+#         self.name=name
+#         self.id=id
+
+#     def arrange(self):
+#         print("he has arranged the books properly")
+#     def update(self):
+#         print(f"{self.name} has updated the book records")
+# a=librarian("mabbu",143)
+# print(a.id)
+# print(a.update())
+
+class Member():
+    def __init__(self,mem_id,end_date,access):
+        self.mem_id=mem_id
+        self.end_date=end_date
+        self.access=access
+    def expire(self):
+        print(f"your membership will be expired on {self.end_date}")
+    def access_to(self):
+        print(f"you have access to {self.access} books")
+a=Member(143,"25-12-25","all")
+print(a.access_to())
+print(a.end_date)
+
+
+    
