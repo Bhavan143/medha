@@ -146,38 +146,38 @@
 # a.exp()
 # print(a.details())
 
-class cart():
-    def __init__(self):
-        self.cart_product=[]
-    def add_products(self,product):
-        self.product=product
-        self.cart_product.append(product)
-        print(f"the product added in cart is {product}")
+# class cart():
+#     def __init__(self):
+#         self.cart_product=[]
+#     def add_products(self,product):
+#         self.product=product
+#         self.cart_product.append(product)
+#         print(f"the product added in cart is {product}")
 
-    def products_in_cart(self):
-        print(f"the prosudct in the cart is {self.cart_product}")
-b=cart()
-print(b.cart_product)
-b.add_products("Tv")
-b.add_products("laptop")
-print(b.cart_product)
+#     def products_in_cart(self):
+#         print(f"the prosudct in the cart is {self.cart_product}")
+# b=cart()
+# print(b.cart_product)
+# b.add_products("Tv")
+# b.add_products("laptop")
+# print(b.cart_product)
 
-class user():
-    def __init__(self,id,mail):
-        self.id=id
-        self.mail=mail
-        self.cart=cart()
-    def browse(self):
-        print("browsing the produsts online")
-    def add_to_cart(self,interested_product):
-        self.interested_product=interested_product
-        self.cart.add_products(interested_product)
-c=user(143,"abdc@gmail.com")
-print(c.id)
-c.add_to_cart("fridge")
-print(b.cart_product)
-print(c.cart.cart_product)
-    
+# class user():
+#     def __init__(self,id,mail):
+#         self.id=id
+#         self.mail=mail
+#         self.cart=cart()
+#     def browse(self):
+#         print("browsing the produsts online")
+#     def add_to_cart(self,interested_product):
+#         self.interested_product=interested_product
+#         self.cart.add_products(interested_product)
+# c=user(143,"abdc@gmail.com")
+# print(c.id)
+# c.add_to_cart("fridge")
+# print(b.cart_product)
+# print(c.cart.cart_product)
+
 
 #5.
 
@@ -230,4 +230,11 @@ print(c.cart.cart_product)
 # print(a.end_date)
 
 
+# a=["cat","dog","monkey","cow"]
+# for i,animals in enumerate(a):
+#     b=animals
+#     c=a[(i+1)%len(a)]
+#     print(b+c[:2])
     
+
+
