@@ -47,3 +47,21 @@
 
 #24/06/25
 #OOPS
+
+#26/06/25
+#encapsulation
+class Dog:
+    def __init__(self,name,breed):
+        self.__name=name
+        self.breed=breed
+    def accesss(self):
+        print(self.__name)
+    def change_name(self,new):
+        self.__name=new
+        return self.__name
+dog=Dog("chintu","lab")
+dog.accesss()
+print(dog.change_name("bunty"))
+dog.accesss()
+
+        
