@@ -102,11 +102,11 @@
 
 #2.DELETE
 #fruits=["apple","banana","orange"]
-#1 a=fruits.pop()
-#print(fruits,a)
+# a=fruits.pop()
+# # print(fruits,a)
 #2 a=fruits.pop(2)
 #print(a)
-#3 fruits.remove("orange")
+#fruits.remove("orange")  #if index not there it throwws an value error
 #4 del fruits[2]
 #4 del fruits
 #5 fruits.clear()
@@ -114,17 +114,17 @@
 
 
 #3.SEARCH & COUNT
-#i=fruits.index("banana")
-#print(i)
+# i=fruits.index("banana")
+# print(i)
 #i=fruits.count("apple")
 #print(i) #it prints the number of occerences of that fruit
 
 
 #4.SORT & ORDER
 # fruits.sort() #assendging order inbuilt 
-# fruits.sort(reverse=True) #desc order
+#fruits.sort(reverse=True) #desc order
 # fruits.reverse()
-
+# print(fruits)
 
 #5.HELPER METHODS
 # prirnt(fruits[fruits.index("apple")]) #apple

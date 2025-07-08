@@ -116,3 +116,9 @@
 # b=1000
 # print(a is b)
 # True
+
+# output="XXXX XXXX XXXX YYYY"
+# number=input("enter the number:")
+# a=number(-4:)
+# b=output.replace("YYYY",a)
+# print(b)
