@@ -67,3 +67,62 @@
 #27/06/25
 
 #7/7/25
+
+#09/07/25
+# a=[32,45,99,100,122,32]
+# def even(a,i):
+#     if i>= len(a):
+#         return
+#     else:
+#         if a[i]%2==0:
+#             print(a[i])
+#     even(a,i+1)
+# even(a,0)
+
+# x,y=0,0
+# up=int(input("up:"))
+# down=int(input("down:"))
+# left=int(input("left:"))
+# right=int(input("right:"))
+# if up:
+#     y+=up
+# if down:
+#     y-=down
+# if right:
+#     x+=right
+# if left:
+#     x-=left
+# print(((x**2)+(y**2))**0.5)
+# print(f"expected output:{((x**2)+(y**2))**0.5}")
+
+# a=("tom",19,80)
+# b=("john",20,90)
+# c=("anton",17,91)
+# d=("json",21,85)
+# a=input("enter the tuple:")
+# b=input("enter the tuple:")
+# c=input("enter the tuple:")
+# d=input("enter the tuple:")
+# e=list(a,b,c,d)
+# sorted_values=sorted(e)
+# print(sorted_values)
+
+people=[]
+while True:
+    person=input()
+    if not person:
+        break
+    parts=person.split(",")
+    name=parts[0]
+    age=int(parts[1])
+    height=int(parts[2])
+    people.append(name,age,height)
+   
+print(sorted(people))
+
+
+a=input("enter binary numbers:").split(",")
+for i in a:
+    b=int(i,2)
+    if b%7==0:
+        print(i)

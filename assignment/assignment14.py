@@ -26,10 +26,17 @@
 #         break
 # print(index)
 
-# a = 'crypt'
+# a = 'crypet'
 # vowels = 'aeiou'
-# b=a.find(vowels)
-# print(b)
+# found = -1
+
+# for i, ch in enumerate(a):
+#     if ch in vowels:
+#         found = i
+#         break
+
+# print(found)
+
 
 
 # a='education' 
@@ -100,9 +107,32 @@
 # b=a.split()
 # print(" ".join(b[::-1]))    
 
-a="a1b2c3"
-b=list(a)
-for i in b:
-    if i.isdigit():
-        b.remove(i)
-print("".join(b))
+# a="a1b2c3"
+# b=list(a)
+# for i in b:
+#     if i.isdigit():
+#         b.remove(i)
+# print("".join(b))
+
+# a=[32,45,99,100,122,32]
+# def even(a,i):
+#     if i>= len(a):
+#         return
+#     else:
+#         if a[i]%2==0:
+#             print(a[i])
+#     print(even(a,i+1))
+# even(a,0)
+
+
+# import math
+# C=40
+# H=20
+# D=input("enter comma-seperated input:").split(",")
+# for i in D:
+#     Q = math.sqrt((4 * C * int(i))/H)
+#     print(round(Q))
+
+
+
+
