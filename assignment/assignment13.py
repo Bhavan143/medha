@@ -1,20 +1,19 @@
 import streamlit as st
-# import requests
+import requests 
 
-# st.title("Ryhming words generator")
-# word=st.text_input("enter the word:")
-# is_clicked=st.button("click me!",type="primary")
-# if is_clicked:
+st.title("Ryhming words generator")
+word=st.text_input("enter the word:")
+is_clicked=st.button("click me!",type="primary")
+if is_clicked:
     
-#     endpoint = f"https://api.datamuse.com/words?sp={word}"
+    endpoint = f"https://api.datamuse.com/words?sp={word}"
  
-#     response = requests.get(endpoint)
+    response = requests.get(endpoint)
  
-#     data = response.json()
+    data = response.json()
  
-#     if response.status_code == 200:
-#         for item in data:
-#             st.write(item.get('word'))
+    if response.status_code == 200:
+        for item in data:
+            st.write(item.get('word'))
 
  
-st.text_input("enter your name:",placeholder="name")

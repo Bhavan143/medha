@@ -1,0 +1,907 @@
+#1.
+# def maximum(a,b):
+#     if a>b:
+#         print(f"{a} is the greatest")
+#     else:
+#         print(f"{b} is the greatest")
+# maximum(4,5)
+
+#2.
+# def maximum(a,b,c):
+#     if a>b and a>c:
+#         print(f"{a} is the greatest")
+#     if b>a and b>c:
+#         print(f"{b} is the greatest")   
+#     else:
+#         print(f"{c} is the greatest") 
+# maximum(4,5,9)
+
+#3.
+# n=int(input("enter the number:"))
+# if n>0:
+#     print(f"{n} is positive number")
+# elif n<0:
+#     print(f"{n} is negative number")
+# else:
+#     print(f"{n} is zero")
+
+#4.
+# n=int(input("enter the number:"))
+# if n%2==0:
+#     print("even")
+# else:
+#     print("odd")
+
+#5.
+# n=int(input("enter the number:"))
+# if n%4==0:
+#     if n%100!=0 or n%400==0:
+#         print("it is a leap year")
+# else:
+#     print("it is not a leap year")
+
+#6.
+# character=input("enter the char:")
+# for i in character:
+#     if i.isalpha:
+#         print(True)
+
+#7.
+# a=input("enter the alphabet:")
+# vowels="aeiou"
+# if a in vowels:
+#     print("it is a vowel")
+# else:
+#     print("it is a consonent")
+
+#8.
+# a=input("enter the alphabet:")
+# if a.isalpha():
+#     print("it is alphabet")
+# elif a.isdigit():
+#     print("it is a number")
+# else:
+#     print("it is a special char")
+
+#9.
+# a=input("enter the alphabet:")
+# if a==a.lower():
+#     print("it is a lowercase alphabet")
+# else:
+#     print("it is a upercase alphabet")
+
+#10.
+# a={1:"monday",
+#    2:"tuesday",
+#    3:"wed",
+#    4:"thu",
+#    5:"Fri",
+#    6:"Sat",
+#    7:"Sun" 
+#    }
+# week_number=int(input("enter the week number:"))
+# print(f"{week_number} of the week is {a[week_number]}")
+
+# 11.
+# a={1:31,
+#    2:28,
+#    3:31,
+#    4:30,
+#    5:31,
+#    6:30,
+#    7:31,
+#    8:31,
+#    9:30,
+#    10:31,
+#    11:30,
+#    12:31
+#    }
+# b=int(input("enter the month number:"))
+# print(f"month{b} has {a[b]} days")
+
+# # 12.
+# amount = int(input("Enter the amount: "))
+# notes = [500, 200, 100, 50, 20, 10]
+# total = 0
+# for note in notes:
+#     if amount >= note:
+#         count = amount // note
+#         print(f"{note} x {count} = {note * count}")
+#         total += count
+#         amount = amount % note
+# print("Total number of notes:", total)
+
+# amount = int(input("Enter the amount: "))
+# notes = [500, 200, 100, 50, 20, 10]
+# total = 0
+# for note in notes:
+#     if amount>=note:
+#         count=amount//note
+#         total+=count
+#         amount=amount%note
+# print(total)
+
+
+# amount = int(input("Enter the amount: "))
+# notes = [2000, 500, 200, 100, 50, 20, 10, 5, 2, 1]
+# total_notes = 0
+
+# for note in notes:
+#     count = amount // note         # how many notes of this denomination
+#     amount = amount % note         # update remaining amount
+#     total_notes += count           # add to total number of notes
+
+# print("Total number of notes:", total_notes)
+
+
+#13.
+# first=int(input("enter the first angle:"))
+# second=int(input("enter the second angle:"))
+# third=int(input("enter the third angle:"))
+# if first and second and third:
+#     if first+second+third==180:
+#         print("it is Triangle")
+#     else:
+#         print("not a triangle")
+
+#14.
+# first=int(input("enter the first angle:"))
+# second=int(input("enter the second angle:"))
+# third=int(input("enter the third angle:"))
+# if first>0 and second>0 and third>0:
+#     if first+second+third==180:
+#         print("it is Triangle")
+#         if first==second==third:
+#             print("equilateral triangle")
+#         elif first==second or second==third or first==third :
+#             print("isosceles triangle")
+#         else:
+#             print("scalene triangle")
+#     else:
+#         print("not a triangle")
+    
+
+#15.
+# import math
+# a=int(input("enter the coefficient of x^2"))
+# b=int(input("enter the coefficient of x"))
+# c=int(input("enter the constant"))
+# eq=f"{a}x^2+{b}x+{c}"
+# roots=[]
+# if a and b and c:
+#     d=b**2-(4*a*c)
+#     root1=(-b + math.sqrt(d))/(2*a)
+#     root2=(-b - math.sqrt(d))/(2*a)
+#     roots.append(round(root1))
+#     roots.append(round(root2))
+# print(roots)
+
+
+#16.
+# a=int(input("enter the number:"))
+# b=int(input("enter the number:"))
+# def addition(a,b):
+#     while b!=0:
+#         carry=a&b
+#         a=a^b
+#         b=carry<<1
+#     return a 
+# print(addition(a,b))
+
+#17.
+# a=input("enter the inputs:").split()
+# b={}
+# for i in a:
+#     if i in b:
+#         b[i]+=1
+#     else:
+#         b[i]=1
+# print(b)
+
+# a=input("enter the inputs:").split()
+# print(len(a))
+
+
+
+#23.
+# a=3
+# b=4
+# c=b
+# d=a
+# a=c
+# b=d
+# print(a,b)
+
+#24.
+# def fact(a):
+#     if a==0 or a==1:
+#         return 1
+#     else:
+#         return a*fact(a-1)
+# print(fact(5))
+
+# import math
+# print(math.factorial(5))
+
+#25.
+# n=int(input("enter the number:"))
+# sum=n*(n+1)//2
+# print(sum)
+
+#26.
+# n=int(input("enter the number:"))
+# for i in range(0,11):
+#     print(f"{n}x{i}={n*i}")
+
+#27.
+# n=int(input("enter the number:"))
+# a,b=0,1
+# for i in range(0,n+1): 
+#     print(a)    #print(a,end=" ") to print in the same line
+#     a,b=b,a+b
+
+
+#28.
+# import math
+# print(math.gcd(2,4))
+# print(math.lcm(2,4))
+
+# def gcd(a, b):
+#     while b != 0:
+#         a, b = b, a % b
+#     return a
+# def lcm(a, b):
+#     return (a * b) // gcd(a, b)
+# Example usage
+# x = int(input("Enter first number: "))
+# y = int(input("Enter second number: "))
+# print("LCM is:", lcm(x, y))
+# print("GCD is:", gcd(x, y))
+
+
+#30.
+# aplhabets=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+# for i in aplhabets:
+#     print(i,end=" ")
+
+
+#31.
+# number=int(input("enter the number:"))
+# power=3
+# answer=1
+# for i in range(0,power):
+#    answer= answer*number
+# print(answer)
+
+#32.
+# a=1234
+# b=str(a)
+# print(int(b[::-1]))
+
+#33.
+# number=1221
+# plaindrome=str(number)
+# a=plaindrome[::-1]
+# if a==plaindrome:
+#     print("it is a palindrome number")
+# else:
+#     print("not a palindrome number")
+
+
+#34.
+# n=int(input("enter the number:"))
+# if n<=1:
+#     print("not a prime number")
+# else:
+#     for i in range(2,int(n**0.5)+1):
+#         if n%i==0:
+#             print("not a prime number")
+#             break
+#     else:
+#             print("it is a prime number")
+
+
+#35.
+# n=int(input("enter the number:"))
+# for num in range(2,n+1):
+#     is_prime=True
+#     for i in range(2,int(num**0.5)+1):
+#         if num%i==0:
+#             is_prime=False
+#             break           
+#     if is_prime:
+#         print(num,end=" ")
+
+#36.
+# n=input("enter the number:")
+# l=len(n)
+# c=0
+# for i in n:
+#     a=int(i)
+#     b=(a**l)
+#     c+=b
+# if c==int(n):
+#     print("it is a armstrong number")
+# else:
+#     print("not an armstrong number")
+
+#37.
+# a=int(input("enter the number:"))
+# b=int(input("enter the number:"))
+# for i in range(a, b + 1):
+#     num_str = str(i)
+#     power = len(num_str)
+#     total = 0
+#     for digit in num_str:
+#         total += int(digit) ** power
+#     if total == i:
+#         print(i)
+
+#38.
+# import math
+# n=int(input("enter the number"))
+# b=str(n)
+# d=0
+# for i in b: 
+#     d+=math.factorial(int(i))
+# if d==int(n):
+#     print("strong number")
+# else:
+#     print("weak number")
+# import math
+# def strong(n):
+#     original=n
+#     d=0
+#     while n>0:
+#         digit=n%10
+#         d+=math.factorial(digit)
+#         n=n//10
+#     return d==original
+# print(strong(145))
+
+
+
+#39.
+# import math
+# a=int(input("enter the number:"))
+# b=int(input("enter the number:"))
+# for i in range(a,b+1):
+#     total=0
+#     c=str(i)
+#     for num in c:
+#         total+=math.factorial(int(num))
+#     if total==i:
+#         print(i)
+    
+# million = 1_000_000  # Same as 1000000
+# print(million) 
+
+#40.
+# n=int(input("enter the number:"))
+# def prime(n):
+#     if n<=0:
+#         print("not a prime number")
+#     else:
+#         for i in range(2,int(n**0.5)+1):
+#             is_prime=False
+#             if n%i==0:  
+#                 break
+#             else:
+#                 is_prime=True
+#         return is_prime
+# def armstrong(n):
+#     a=str(n)
+#     b=len(a)
+#     total=0
+#     for i in a:
+#         total+=int(i)**b
+#     if total==n:
+#         return True
+#     else:
+#         return False
+# if armstrong(n):
+#     print("it is an armstrong number")
+# if prime(n):
+#     print("it is a prime number")
+
+#41.
+# n=int(input("enter the number:"))
+# prime_numbers=[]
+# for num in range(2,n+1):
+#     is_prime=True
+#     for i in range(2,int(num**0.5)+1):
+#         if num%i==0:
+#             is_prime=False
+#             break
+#     if is_prime:
+#         prime_numbers.append(num)
+# for i in range(2,n//2):
+#     if i in prime_numbers and n-i in prime_numbers:
+#         print(f"{i}+{n-i}={n}")
+    
+
+# def is_prime(num):
+#     if num < 2:
+#         return False
+#     for i in range(2, int(num**0.5)+1):
+#         if num % i == 0:
+#             return False
+#     return True
+# n = int(input("Enter a number: "))
+
+# for even in range(4, n + 1, 2):
+#     print(f"\n{even} can be expressed as:")
+#     for i in range(2, even // 2 + 1):
+#         if is_prime(i) and is_prime(even - i):
+#             print(f"{i} + {even - i} = {even}")
+
+
+
+#42.
+# n=int(input("enter the number:"))
+# def b(n):
+#    if n==0:
+#       return 0
+#    else:
+#       return n+b(n-1)
+# print(b(n))
+
+
+#43.
+# n=int(input("enter the number:"))
+# for i in range(1,n+1):
+#     if n%i==0:
+#         print(i,end=" ")
+
+
+#44.
+# a = float(input("Enter first number: "))
+# b = float(input("Enter second number: "))
+# print("Select operation:")
+# print("1. Add")
+# print("2. Subtract")
+# print("3. Multiply")
+# print("4. Divide")
+# choice = input("Enter choice (1/2/3/4): ")
+# match choice:
+#     case "1":
+#         print(a+b)
+#     case "2":
+#         print(a-b)
+#     case "3":
+#         print(a*b)
+#     case "4":
+#         if b!=0:
+#             print(a/b)
+#         else:
+#             print("cannot divide by zero")
+#     case _:
+#         print("invalid input")
+
+
+
+#45.
+# def fact(n):
+#     if n==0 or n==1:
+#         return 1
+#     else:
+#         return n*fact(n-1)
+# n=int(input("enter the number:"))
+# print(fact(n))
+
+
+#46.
+# def gcd(a, b):
+#     if b == 0:
+#         return a
+#     else:
+#         return gcd(b, a % b)
+# num1 = int(input("Enter first number: "))
+# num2 = int(input("Enter second number: "))
+# print("GCD is:", gcd(num1, num2))
+
+
+
+#47.
+# n=input("enter the number:")
+# b=int(input("enter the number:"))
+# binary=bin(b)
+# a=int(n,2)
+# print(a)
+# print(binary[2:])
+
+
+#48.
+# num=9
+# b=oct(num)
+# print(b[2:])
+# c=b[2:]
+# d=str(c)
+# print(int(d,8))
+
+
+#49.
+# def rev(a):
+#     if a == "":
+#         return ""
+#     else:
+#         return a[-1] + rev(a[:-1])
+# a = "bhavan nagam"
+# print("Reversed:", rev(a))
+
+
+
+#50.
+# a=[1,2,3,4,5]
+# sum=0
+# for i in a:
+#     sum+=i
+# avg=sum/len(a)
+# print(avg)
+
+
+#51.
+# a=[1,2,3,4,5]
+# for i in a:
+#     temp=i
+#     if i>temp:
+#         i=temp
+# print(temp)
+    
+
+#52.
+# n = input("Enter the numbers: ").split()
+# nums = [int(i) for i in n]
+# mean = sum(nums) / len(nums)
+# squared_diffs = [(x - mean) ** 2 for x in nums]
+# variance = sum(squared_diffs) / len(nums)
+# stdev = variance ** 0.5
+# print("Standard Deviation:", round(stdev, 2))
+
+
+#53.
+# row=int(input("enter the number of rows:"))
+# col=int(input("enter the number of cols:"))
+# print("enter matrix one:")
+# matrix1=[]
+# for i in range(row):
+#     rows=list(map(int,input().split()))
+#     matrix1.append(rows)
+# print("enter matrix two:")
+# matrix2=[]
+# for i in range(row):
+#     rows=list(map(int,input().split()))
+#     matrix2.append(rows)
+
+# result=[]
+# for i in range(row):
+#     rows=[]
+#     for j in range(col):
+#         rows.append(matrix1[i][j]+matrix2[i][j])
+#     result.append(rows)
+
+# print(result)
+
+
+#54.
+# rows=int(input("enter the number of rows:"))
+# cols=int(input("enter the number of cols:"))
+# matrix=[]
+# for i in range(rows):
+#     row=list(map(int,input().split()))
+#     matrix.append(row)
+
+# matrix1=[]
+# for j in range(cols):
+#     t_rows=[]
+#     for i in range(rows):
+#         t_rows.append(matrix[i][j])
+#     matrix1.append(t_rows)
+# print(matrix1)
+
+#59.
+# a="bhhavan"
+# b={}
+# for i in a:
+#     if i in b:
+#         b[i]+=1
+#     else:
+#         b[i]=1
+# print(b)
+
+#60.
+# v="aeiou"
+# a="bhavan nagam93 __"
+# vowels=0
+# consonents=0
+# digits=0
+# spaces=0
+# special=0
+# for i in a:
+#     if i.isalpha():
+#         if i in v:
+#             vowels+=1
+#         else:
+#             consonents+=1
+#     elif i.isdigit():
+#         digits+=1
+#     elif i.isspace():
+#         spaces+=1
+#     else:
+#         special+=1
+    
+# print(f"the count of vowels are:{vowels},\nconsonents are:{consonents}\ndigits are:{digits}\nspaces are{spaces}\nspecial characters are:{special}")
+
+
+#61.
+# a="bhavan nagam11"
+# # b=""
+# # for i in a:
+# #     if i.isalpha():
+# #         b+=i
+# #     else:
+# #         pass
+# b="".join([ch for ch in a if ch.isalpha()])
+# print(b)
+
+
+#62.
+# a="bhavan nagam"
+# count=sum(1 for i in a )
+# # for i in a:
+# #     count+=1
+# print(count)
+
+#63.
+# a="bhavan"
+# b="nagam"
+# print(a+b)
+
+#64
+# a="ab"
+# c=a[:]
+# b=""
+# for i in a:
+#     b+=i
+# print(b)
+# print(c)
+
+#65.
+# a=["apple","banana","monkey","donkey","elephant"]
+# l=len(a)
+# for i in range(l):
+#     for j in range(l-i-1):
+#         if a[j]>a[j+1]:
+#             a[j],a[j+1]=a[j+1],a[j]
+# print(a)
+
+
+#66.
+# student={}
+# student.update({"name":"bhavan","age":19})
+# print(student)
+
+
+#67.
+# class dis:
+#     def __init__(self,feet,inches):
+#         self.inches=inches
+#         self.feet=feet
+# def add(d1,d2):
+#     totalinches=d1.inches+d2.inches
+#     totalfeets=d1.feet+d2.feet
+#     if totalinches>=12:
+#         a=totalinches//12
+#         b=totalinches%12
+#         totalfeets+=a
+#         totalinches=b
+#     return(f"{totalfeets}feet {totalinches}inches")
+        
+# distance1=dis(6,11)
+# distance2=dis(6,5)
+# print(add(distance1,distance2))
+
+
+#68.
+# # a=complex(3,5)
+# # b=complex(6,1)
+# # def add(a,b):
+# #     return(a+b)
+# # print(add(a,b))
+
+# class complex():
+#     def __init__(self,real,img):
+#         self.img=img
+#         self.real=real
+# def add(a,b):
+#     r=a.real+b.real
+#     i=a.img+b.img
+#     result=complex(r,i)
+#     print(f"the sum is:{result.real}+{result.img}j")
+# a=complex(3,5)
+# b=complex(6,1)
+# add(a,b)
+
+
+
+#69.
+# class time():
+#     def __init__(self,hours,min,sec):
+#         self.hours=hours
+#         self.min=min
+#         self.sec=sec
+# time1=time(12,45,25)
+# time2=time(18,30,59)
+# total1=(time1.hours*3600)+(time1.min*60)+time1.sec
+# total2=(time2.hours*3600)+(time2.min*60)+time2.sec
+# total=abs(total1-total2)
+# f_hrs=total//3600
+# f_min=(total%3600)//60
+# f_sec=total%60
+# print(f"hours:{f_hrs},mins:{f_min},secs:{f_sec}")
+
+
+#70.
+# b=12345
+# a=str(b)
+# first=a[0]
+# last=a[-1]
+# print(first)
+# print(last)
+
+
+#71.
+# a=12345
+# b=str(a)
+# first=b[0]
+# last=b[-1]
+# temp=first
+# first=last
+# last=temp
+# d=first+b[1:-1]+last
+# print(first)
+# print(last)
+# print(d)
+
+#72.
+# a=12345
+# b=str(a)
+# first=int(b[0])
+# last=int(b[-1])
+# print(f"sum:{first+last}")
+
+
+#73.
+# sum=0
+# a="12345"
+# for i in a:
+#     sum+=int(i)
+# print(sum)
+
+#74.
+# product=1
+# a="12345"
+# for i in a:
+#     product*=int(i)
+# print(product)
+
+#75.
+# a="123445325"
+# b={}
+# for i in a:
+#     b[i]=1
+#     if i in b:
+#         b[i]+=1
+# print(b)
+
+#76.
+# a=5
+# print(~a)
+# a = 5
+# n = a.bit_length()         # 3 bits needed for 5
+# mask = (1 << n) - 1        # mask = 7 (binary 111)
+# ones_complement = a ^ mask # 5 ^ 7 = 2
+# print(ones_complement)
+
+
+#77.
+# a=5
+# n = a.bit_length()         
+# mask = (1 << n) - 1 
+# ones_complement = a ^ mask
+# twos=ones_complement+1
+# print(twos)
+
+#78.
+# names=["bhavan","adarsh","maneesh","ashish"]
+# for i in range(len(names)): 
+#     for j in range(len(names)-i-1):
+#         if names[j]>names[j+1]:
+#             names[j],names[j+1]=names[j+1],names[j]
+# print(names)
+
+#89.
+# a="bhavan nagam"
+# print(a[::-1])
+
+
+#90.
+
+
+#91.
+# a=[1,2,3,4]
+# a.insert(0,1) 
+# print(a)
+
+
+#92.
+# a=[1,2,3,4,5]
+# print(a.pop(0))
+
+
+#95.
+# rows=int(input("enter the number of rows:"))
+# cols=int(input("enter the number of cols:"))
+# matrix=[]
+# for i in range(rows):
+#     row=list(map(int,input().split()))
+#     matrix.append(row)
+# for i in range(rows):
+#     rows_sum=sum(matrix[i])
+#     print(f"{i}th row sum is:{rows_sum}")
+# for j in range(cols):
+#     cols_sum=0
+#     for i in range(rows):
+#         cols_sum+=matrix[i][j]
+#     print(cols_sum)
+
+# import numpy as np
+# a=np.array([[1,2,3],[4,5,6]])
+# cols_sum=np.sum(a,axis=0)
+# rows_sum=np.sum(a,axis=1)
+# print(cols_sum)
+# print(rows_sum)
+
+
+# import numpy as np
+# a=np.array([[4,5,6],[7,8,9]])
+#96.
+# a=[1,0,0,0,0,0,2]
+# zero_count=0
+# b=len(a)//2
+# for i in a:
+#     if i==0:
+#         zero_count+=1
+# if zero_count>b:
+#     print("it is sparse matrix")
+# else:
+#     print("not")
+
+
+
+#98.
+# a=[1,2,3,4,5,7]
+# b=len(a)+1
+# sum1=sum(a)
+# sum2=b*(b+1)/2
+# sum_diff=sum2-sum1
+# print(sum_diff)
+
+#99.
+# a=[1,2,3,4,5]
+# x=2
+# for i in range(x):
+#     b=a.pop(0)
+#     a.append(b)
+# print(a)
+
+    
+#100.
+# def find_ceiling(arr,x):
+#     for num in arr:
+#         if num>=x:
+#             return num
+#     return -1
+# print(find_ceiling([1,2,3,5,7,8],6))
+
+

@@ -107,22 +107,17 @@
 # sorted_values=sorted(e)
 # print(sorted_values)
 
-people=[]
-while True:
-    person=input()
-    if not person:
-        break
-    parts=person.split(",")
-    name=parts[0]
-    age=int(parts[1])
-    height=int(parts[2])
-    people.append(name,age,height)
+# people=[]
+# while True:
+#     person=input()
+#     if not person:
+#         break
+#     parts=person.split(",")
+#     name=parts[0]
+#     age=int(parts[1])
+#     height=int(parts[2])
+#     people.append(name,age,height)
    
-print(sorted(people))
+# print(sorted(people))
 
 
-a=input("enter binary numbers:").split(",")
-for i in a:
-    b=int(i,2)
-    if b%7==0:
-        print(i)
