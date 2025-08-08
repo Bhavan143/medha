@@ -329,3 +329,176 @@
 #         return JSONResponse(content={
 #             "message":f"Successfully deleted the course-{course_id}"
 #         })
+
+
+# <!DOCTYPE html>
+# <html lang="en">
+ 
+# <head>
+#     <title>Medha</title>
+#     <link rel="icon" type="image/x-icon" href="https://en.wikipedia.org/static/images/icons/wikipedia.png">
+# </head>
+ 
+# <body>
+#     <!-- Text Content Tags-->
+ 
+#     <!-- Headings-->
+#     <h1> Heading 1</h1>
+#     <h2> Heading 2</h2>
+#     <h3> Heading 3</h3>
+#     <h4> Heading 4</h4>
+#     <h5> Heading 5</h5>
+#     <h6> Heading 6</h6>
+ 
+#     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br><br>
+#         <hr>
+ 
+#         <b>Lorem Ipsum </b>
+ 
+#         <strong>has been the </strong>
+#         <i>industry's standard dummy text </i>
+ 
+#         <u>ever since the 1500s, </u>
+ 
+#         when an unknown printer took a galley of type and scrambled it to make a type <mark>specimen book.</mark>
+ 
+#         It has survived not only <del>five centuries</del> four cenrturies, but also the leap into electronic
+#         typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+#         sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+#         including versions of Lorem Ipsum.
+#     </p>
+ 
+#     <!-- List Tags-->
+ 
+#     <ul>
+#         <li>First Item</li>
+#         <li>Second Item</li>
+#     </ul>
+ 
+#     <ol>
+#         <li>Second Item</li>
+#         <li>First Item</li>
+#     </ol>
+ 
+#     <!-- Media Tags-->
+ 
+#     <a href="http://medhaedutech.com/" target="_blank">Click me</a>
+ 
+#     <a href="mailto:saurav@gmail.com" target="_blank">Click me</a>
+ 
+#     <a href="tel:917013908761">Call me</a>
+ 
+#     <div>
+#         <img src="https://medhaedutech.com/wp-content/uploads/2023/09/aaa.png" width="200" height="200">
+#     </div>
+# </body>
+ 
+# <audio controls>
+#     <source src="https://www.coothead.co.uk/audio/You-Cant-Always-Get-What-You-Want.mp3" type="audio/mpeg">
+# </audio>
+ 
+# <!-- <video autoplay="false" loop="" controls="" width="640" height="480">
+# <source type="video/mp4" src="https://endtest-videos.s3-us-west-2.amazonaws.com/documentation/endtest_data_driven_testing_csv.mp4">
+# </video>
+ 
+# <iframe width="560" height="315" src="https://www.youtube.com/embed/eWRfhZUzrAc?si=yzdtNo2HgKfap2sO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+ 
+# <!-- Table Tags-->
+ 
+# <table>
+#      <thead>
+#         <tr>
+#              <th>Name</th>
+#              <th>Age</th>
+#         </tr>
+#      </thead>
+ 
+#      <tbody>
+#         <tr>
+#              <td>John</td>
+#              <td>40</td>
+#         </tr>
+#         <tr>
+#              <td>Alex</td>
+#              <td>40</td>
+#         </tr>
+ 
+#      </tbody>
+# </table>
+ 
+# <!-- FORm Tags-->
+ 
+ 
+# <form action="/submit-form" method="POST">
+  
+#     <!-- Basic text inputs -->
+ 
+#     <input type="text" name="username" required> <br>
+ 
+#     <input type="email" name="email" placeholder="email" value="john@gmail.com" disabled> <br>
+    
+#     <input type="password" name="password" placeholder="password">. <br>
+ 
+#     <input type="tel" name="phone" placeholder="phone"> <br>
+    
+ 
+#     <!-- Number & date Inputs -->
+ 
+#     <input type="number" min="18" max="100" step="5">
+ 
+#     <input type="date" min="2023-01-01" max="2025-12-31">
+ 
+#     <input type="time">
+ 
+#     <input type="month"> <br>
+ 
+#     <input type="week"> <br>
+ 
+#     <input type="range" min="20">
+    
+ 
+#     <!-- Selection Inputs-->
+ 
+#     <input type="checkbox" id="music">
+#     <label for="music">Music</label>
+ 
+ 
+#     <input type="radio" id="male">
+#     <label for="male">Male</label>
+ 
+#     <input type="radio" id="female">
+#     <label for="female">Female</label>
+ 
+#     <!-- File and color inputs-->
+#      <input type="file" accept=".pdf,.doc,.docx" multiple>
+ 
+#      <input type="color">
+ 
+#      <input type="hidden" value="ajkshk-asjkhd-ajksdb">
+ 
+#      <select name="country" multiple>
+#         <option>Choose a country</option>
+#         <option value="us">US</option>
+#         <option value="ca">Canada</option>
+#      </select>
+    
+ 
+#     <!-- Text Area-->
+ 
+#     <textarea rows="5" cols="40" placeholder="akshjd" maxlength="4"></textarea>
+ 
+# <button type="submit">Submit</button>
+#     <button type="reset">Reset</button>
+# </form>
+ 
+# <br>
+# <br>
+# <br>
+ 
+# <form action="https://met-demo.requestcatcher.com/" method="post">
+#     <input type="text" name="username">
+#     <button type="submit">Submit</button>
+# </form>
+ 
+# </html>
+ 
