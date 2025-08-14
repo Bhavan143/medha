@@ -502,3 +502,32 @@
  
 # </html>
  
+# import streamlit as st
+# from supabase import create_client
+# database=create_client("https://dkxcycckurmgpasfhyyn.supabase.co","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRreGN5Y2NrdXJtZ3Bhc2ZoeXluIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTQxOTE0MjYsImV4cCI6MjA2OTc2NzQyNn0.HZ2HNHna4JMPwFDIhMNFyF1JNe8mGwIF7JCm7nJ1P-I")
+
+
+# tabs=st.tabs(["Signup","login"])
+# with tabs[0]:
+#     email1=st.text_input("email ",placeholder="Enter email")
+#     password1=st.text_input("password ",placeholder="Enter password")
+#     Signup_btn=st.button("Signup",type="primary",use_container_width=True)
+#     if Signup_btn:
+#         response = database.auth.sign_up(
+#             {
+#                 "email": email1,
+#                 "password": password1,
+#             }
+#         )
+#         st.write(response.user)
+
+# with tabs[1]:
+#     email=st.text_input("email",placeholder="Enter email ")
+#     password=st.text_input("password",placeholder="Enter password ")
+#     login_btn=st.button("Login",type="primary",use_container_width=True)
+#     if login_btn:
+#         response=database.auth.sign_in_with_password({
+#                 "email": email,
+#                 "password": password,
+#             })
+#         st.write(response.session.access_token)
