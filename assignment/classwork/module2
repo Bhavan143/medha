@@ -531,3 +531,128 @@
 #                 "password": password,
 #             })
 #         st.write(response.session.access_token)
+
+from fastapi import FastAPI, Form
+from fastapi.responses import HTMLResponse
+
+app = FastAPI()
+
+# Fake DB for login
+db = {
+    'username': 'john',
+    'password': '12345'
+}
+
+# Go to Home button
+go_home_btn = """<br><br><a href="/"><button>Go to Home</button></a>"""
+
+# Pages
+home_html = """
+<!DOCTYPE html>
+<html>
+<head><title>Home</title></head>
+<body>
+    <a href="/about">About</a> <br><br>
+    <a href="/projects">Projects</a> <br><br>
+    <a href="/contact">Contact</a> <br><br>
+    <a href="/login">Login</a><br><br>
+</body>
+</html>
+"""
+
+about_html = f"""
+<!DOCTYPE html>
+<html>
+<head><title>About</title></head>
+<body>
+    <h2>About Us</h2>
+    <p>This is the about page where we describe our mission and vision. 
+    We are dedicated to providing great services.</p>
+    {go_home_btn}
+</body>
+</html>
+"""
+
+projects_html = f"""
+<!DOCTYPE html>
+<html>
+<head><title>Projects</title></head>
+<body>
+    <h2>Projects</h2>
+    <p>Here you can find our recent projects and works.</p>
+    {go_home_btn}
+</body>
+</html>
+"""
+
+contact_html = f"""
+<!DOCTYPE html>
+<html>
+<head><title>Contact</title></head>
+<body>
+    <h2>Contact Us</h2>
+    <p>Email: contact@example.com<br>Phone: +123456789</p>
+    {go_home_btn}
+</body>
+</html>
+"""
+
+login_html = f"""
+<!DOCTYPE html>
+<html>
+<head><title>Login</title></head>
+<body>
+    <h2>Login Page</h2>
+    <form action='/submit' method='POST'>
+        <div>
+            <input type='text' placeholder='Email' name='email'>
+        </div>
+        <div>
+            <input type='password' placeholder='Password' name='password'>
+        </div>
+        <button type='submit'>Login</button>
+    </form>
+    {go_home_btn}
+</body>
+</html>
+"""
+
+dashboard_html = f"""
+<!DOCTYPE html>
+<html>
+<head><title>Dashboard</title></head>
+<body>
+    <h2>Dashboard</h2>
+    <p>You are in the dashboard. Welcome!</p>
+    {go_home_btn}
+</body>
+</html>
+"""
+
+# Routes
+@app.get("/")
+def home():
+    return HTMLResponse(home_html)
+
+@app.get("/about")
+def about():
+    return HTMLResponse(about_html)
+
+@app.get("/projects")
+def projects():
+    return HTMLResponse(projects_html)
+
+@app.get("/contact")
+def contact():
+    return HTMLResponse(contact_html)
+
+@app.get("/login")
+def login():
+    return HTMLResponse(login_html)
+
+@app.post("/submit")
+def submit(email: str = Form(...), password: str = Form(...)):
+    if email == db.get('username') and password == db.get('password'):
+        return HTMLResponse(dashboard_html)
+    else:
+        return HTMLResponse(f"<p style='color:red;'>Invalid credentials</p>{go_home_btn}")
